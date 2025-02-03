@@ -1,27 +1,23 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function approach(argument0, argument1, argument2)
+
+
+function approach(_value, _goal, _spd)
 {
-	/// Approach(a, b, amount)
-	// Moves "a" towards "b" by "amount" and returns the result
 	/// @param value
 	/// @param goal
 	/// @param spd
-	
-	if (argument0 < argument1)
-	{
-	    argument0 += argument2;
-	    if (argument0 > argument1)
-	        return argument1;
+	if (_value < _goal) {
+	    _value += _spd;
+	    if (_value > _goal)
+	        return _goal;
 	}
-	else
-	{
-	    argument0 -= argument2;
-	    if (argument0 < argument1)
-	        return argument1;
+	else {
+	    _value -= _spd;
+	if (_value < _goal)
+		return _goal;
 	}
-	return argument0;
+	return _value;
 }
+
 
 function move_in_dir(argument0,argument1)
 {

@@ -4,12 +4,12 @@ follow = noone;
 
 zoom = 1
 
-viewwidthhalf = camera_get_view_width(cam)*0.5;
+viewwidthhalf  = camera_get_view_width(cam) *0.5;
 viewheighthalf = camera_get_view_height(cam)*0.5;
 
 xTo = room_width/2;
 yTo = room_height/2;
 
-shakeL = 60*3;
+shakeL = 0;
 shakeM = 0;
 shakeA = 0;

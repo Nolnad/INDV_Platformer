@@ -1,0 +1,2 @@
+vspd += grv
+PlayerCollision()
