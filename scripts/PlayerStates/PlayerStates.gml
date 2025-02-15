@@ -51,6 +51,7 @@ function PlayerDead() {
 	
 	switch state_step {
 	case 0: 
+		jump_mod = 0
 		inputdir = 0;
 		player_sprite = sPlayerDead
 		state_step = 1

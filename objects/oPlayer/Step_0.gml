@@ -5,6 +5,7 @@ key_right = keyboard_check(ord("D")); //or keyboard_check(vk_right);
 
 key_jump = keyboard_check(vk_space);
 
+
 var on_ground = place_meeting(x,y+1,oCollis);
 
 if on_ground {
@@ -37,7 +38,7 @@ hspd = clamp(hspd,-max_hspd,max_hspd);
 if key_jump and coyote_t > 0
 {
 	screen_shake(2,3)
-	vspd = jump_spd;
+	vspd = jump_spd*jump_mod;
 	coyote_t = 0
 }
 

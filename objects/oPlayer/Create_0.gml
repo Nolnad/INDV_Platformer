@@ -18,7 +18,7 @@ air_fric = 0.1
 
 hp = 5;
 
-
+jump_mod = 1
 state_step = 0
 
 key_up    = 0;
@@ -43,3 +43,7 @@ state = PLAYERSTATE.free;
 states[PLAYERSTATE.free] = PlayerFree;
 //states[PLAYERSTATE.stun] = PlayerStateAttack;
 states[PLAYERSTATE.dead] = PlayerDead;
+
+with instance_create_depth(x,y,depth-10,oGun) {
+	owner = other.id
+}

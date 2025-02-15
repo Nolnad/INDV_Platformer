@@ -1,3 +1,8 @@
-hspd = 0
-vspd = 0
-grv = 0.3
+event_inherited();
+
+dir = 1
+
+spd = 3
+hp_max = 3
+hp = hp_max
+state = ENEMY_STATES.alive
